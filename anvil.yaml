@@ -1,6 +1,6 @@
 allow_embedding: false
-package_name: live_webcam_viewer
-name: live webcam viewer
+package_name: live_webcam_viewer_12_oct
+name: live webcam viewer 12 oct
 startup_form: Form1
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
