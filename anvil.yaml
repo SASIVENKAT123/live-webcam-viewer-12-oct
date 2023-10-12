@@ -1,7 +1,12 @@
 allow_embedding: false
-package_name: Material_Design_1
-name: Material Design 1
+package_name: live_webcam_viewer
+name: live webcam viewer
 startup_form: Form1
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
-services: []
+metadata: {logo_img: 'https://www.google.co.in/imgres?imgurl=https%3A%2F%2Fimg.freepik.com%2Fpremium-vector%2Fwebcam-vector-drawing-isolated-hand-drawn-engraved-style-illustration_379823-9247.jpg%3Fw%3D2000&tbnid=wehh9qC7o8-iaM&vet=12ahUKEwilsbe_9O-BAxWX46ACHatWCv0QMygWegUIARCDAQ..i&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fwebcam-vector-drawing-isolated-hand-drawn-engraved-style-illustration_52293623.htm&docid=tGu88LPaSHHyMM&w=2000&h=2000&q=webcam&hl=en&safe=active&ved=2ahUKEwilsbe_9O-BAxWX46ACHatWCv0QMygWegUIARCDAQ',
+  title: Live Web Cam Viewer}
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}

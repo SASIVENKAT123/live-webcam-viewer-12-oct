@@ -7,3 +7,8 @@ class Form1(Form1Template):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def drop_down_1_change(self, **event_args):
+    my_media = self.drop_down_1.selected_value
+    self.image_1.source = URLMedia(my_media)
+

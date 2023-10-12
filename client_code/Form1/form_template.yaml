@@ -7,6 +7,28 @@ components:
   properties: {}
   name: content_panel
   layout_properties: {slot: default}
+  components:
+  - name: headline_1
+    properties: {role: headline, align: center, text: Live web cam viewer, bold: true,
+      underline: true}
+    type: Label
+    layout_properties: {grid_position: 'GFAHEH,QUTIWT'}
+  - name: image_1
+    properties: {}
+    type: Image
+    layout_properties: {grid_position: 'AJNJTC,LBNLUG'}
+  - name: drop_down_1
+    properties:
+      items: ['https://cwwp2.dot.ca.gov/data/d2/cctv/image/pitriverbridge/pitriverbridge.jpg',
+        'https://cwwp2.dot.ca.gov/data/d3/cctv/image/hwy99atgarnerlane1/hwy99atgarnerlane1.jpg',
+        'https://cwwp2.dot.ca.gov/data/d2/cctv/image/johnsongrade/johnsongrade.jpg',
+        'https://cwwp2.dot.ca.gov/data/d2/cctv/image/perez/perez.jpg', 'https://cwwp2.dot.ca.gov/data/d2/cctv/image/mthebron/mthebron.jpg',
+        'https://cwwp2.dot.ca.gov/data/d2/cctv/image/eurekaway/eurekaway.jpg', 'https://cwwp2.dot.ca.gov/data/d2/cctv/image/sr70us395/sr70us395.jpg',
+        'https://cwwp2.dot.ca.gov/data/d2/cctv/image/bogard/bogard.jpg', 'https://cwwp2.dot.ca.gov/data/d2/cctv/image/eastriverside/eastriverside.jpg',
+        'https://cwwp2.dot.ca.gov/data/d10/cctv/image/sbi5sopeltierroad/sbi5sopeltierroad.jpg']
+    type: DropDown
+    layout_properties: {grid_position: 'VUYDSP,ITFWBE'}
+    event_bindings: {change: drop_down_1_change}
 - type: FlowPanel
   properties: {}
   name: navbar_links
